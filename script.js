@@ -48,10 +48,12 @@ const magazines =
         for (let i = 0; i < magazines.length; i++) {
             rootElement.insertAdjacentHTML("beforeend", `
                 <div class="card">
-                    <div class="sub" >${magazines[i].sub}</div>
+                    <div class="sub" >${magazines[i].sub}/YEAR</div>
                     <h1 class="title" >${magazines[i].title}</h1>
                     <p class="text" >${magazines[i].text}</p>
-                    <button>Subscribe here<span class="material-icons">arrow_forward</span></button>
+                    <button>Subscribe here<span class="material-symbols-outlined">
+					arrow_forward
+					</span></button>
                 </div>
             `);
         }
